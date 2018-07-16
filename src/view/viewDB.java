@@ -4,10 +4,10 @@ import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.EventQueue;
 import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
 import java.awt.GridLayout;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
@@ -239,7 +239,7 @@ class DataPanel extends JPanel
 	public DataPanel(RowSet rs) throws SQLException
 	{
 		fields = new ArrayList<>();
-		setLayout(new GridLayout());
+		setLayout(new GridBagLayout());
 		GridBagConstraints gbc = new GridBagConstraints();
 		gbc.gridwidth = 1;
 		gbc.gridheight = 1;
